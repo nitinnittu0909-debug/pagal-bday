@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Surprise — Happy B'day Sis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+  <div class="hearts" id="hearts"></div>
+
+  <!-- PAGE 1 -->
+  <div id="p1" class="screen page active">
+    <div class="card">
+      <div class="big-title"> Come in 🎀</div>
+      <div>press enter to start the surprise</div>
+      <button id="enterBtn" class="enter-btn">ENTER</button>
+      <div class="tiny">Tip: press Enter key too</div>
+    </div>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div id="p2" class="screen page">
+    <div class="card">
+      <div style="font-size:20px;font-weight:800"> tu meri behen he na?</div>
+      <div class="confirm-row">
+        <button id="yesBtn" class="opt yes">Haan</button>
+        <button id="noBtn" class="opt no">Na</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Transparent overlay message (for No) -->
+  <div id="overlayMsg" class="overlay-msg" aria-hidden="true">
+    <div id="glass" class="glass-box">:- dikha di tune aab baat mat karlio khabi or haa happy birthday</div>
+  </div>
+
+  <!-- PAGE 3 -->
+  <div id="p3" class="screen page">
+    <div class="card">
+      <div class="msg-box">tu such me behen hogi to koi ladki set karayegi</div>
+      <button id="okBtn" class="ok-btn">OK</button>
+    </div>
+  </div>
+
+  <!-- PAGE 4 Gallery -->
+  <div id="p4" class="screen page">
+    <div class="card" style="height:86vh;overflow:hidden">
+      <div class="gallery">
+        <div class="scatter" id="scatter">
+         <!-- Replace src values with real photos -->
+<img class="photo" id="ph1" src="image/Screenshot 2025-11-08 012604.png" style="left:8%; top:6%; transform:rotate(-12deg);" alt="photo1">
+<img class="photo" id="ph2" src="image/Screenshot 2025-11-08 012621.png" style="left:62%; top:12%; transform:rotate(8deg);" alt="photo2">
+<img class="photo" id="ph3" src="image/Screenshot 2025-11-08 012712.png" style="left:26%; top:48%; transform:rotate(18deg);" alt="photo3">
+<img class="photo" id="ph4" src="image/Screenshot 2025-11-08 012807.png" style="left:72%; top:56%; transform:rotate(-22deg);" alt="photo4">
+<img class="photo" id="ph5" src="image/Screenshot 2025-11-08 014341.png" style="left:40%; top:18%; transform:rotate(-6deg);" alt="photo5">
+
+<div class="center-text">happy birthday behena</div>
+</div>
+</div>
+<div class="tiny">ek ek kar ke aapne photo's par click kar</div>
+</div>
+</div>
+
+  <!-- PAGE 5 Cake -->
+  <div id="p5" class="screen page">
+    <div class="card">
+      <div class="stage-cake">
+        <div class="cake-area" id="cakeArea">
+          <div class="part base" id="base"></div>
+          <div class="part cream" id="cream"></div>
+          <div class="sprinkles" id="sprinkles"></div>
+          <div class="cherry" id="cherry"></div>
+          <div class="part candle" id="candle"></div>
+          <div class="flame" id="flame"></div>
+          <div class="cake-cut" id="cakeCut">
+            <div class="base-left"></div>
+            <div class="base-right"></div>
+            <div class="cream-left"></div>
+            <div class="cream-right"></div>
+          </div>
+          <div class="cut-overlay"><div class="cut-text" id="cutText">happy birthday 🎉<br>shada shuki rhe or dua kar teri bhabi jhaldi aye</div></div>
+        </div>
+        <div style="margin-top:18px;color:#fff;font-weight:700">Tap/Click the cake to cut it!</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
